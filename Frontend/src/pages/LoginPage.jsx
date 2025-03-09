@@ -14,7 +14,7 @@ function LoginPage() {
     e.preventDefault();
     toast.dismiss();
     try {
-      const response = await axios.post("http://localhost:5000/user/login",
+      const response = await axios.post("https://chat-app-efwn.onrender.com/user/login",
         { identifier, password },
         { withCredentials: true }
       );
