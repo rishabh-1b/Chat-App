@@ -6,7 +6,7 @@ function useFetchUsers() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/user/getAllUsers", {
+        const response = await axios.get("https://chat-app-efwn.onrender.com/user/getAllUsers", {
           withCredentials: true,
         });
         setUsers(response.data.users);
