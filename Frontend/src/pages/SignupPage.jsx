@@ -16,7 +16,7 @@ function SignupPage() {
     e.preventDefault();
     toast.dismiss();
     try {
-      const response = await axios.post("http://localhost:5000/user/signup",
+      const response = await axios.post("https://chat-app-efwn.onrender.com/user/signup",
         { fullName, username: username.toLowerCase(), email, password, confirmPassword, gender },
         { withCredentials: true }
       );
