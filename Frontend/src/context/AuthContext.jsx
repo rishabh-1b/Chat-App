@@ -14,7 +14,7 @@ export default function AuthProvider({ children }) {
   const fetchUser = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/user/getUser",
+        "https://chat-app-efwn.onrender.com/user/getUser",
         { withCredentials: true }
       );
       setAuthUser(response.data.user);
