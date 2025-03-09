@@ -9,7 +9,7 @@ function useFetchMessages(selectedUser) {
   const fetchMessages = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/message/get/${selectedUser._id}`,
+        `https://chat-app-efwn.onrender.com/message/get/${selectedUser._id}`,
         { withCredentials: true }
       );
       setMessages(response.data.messages);
