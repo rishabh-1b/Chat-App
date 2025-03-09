@@ -5,7 +5,7 @@ function useLogout()
   const logout = async () => {
     try {
       await axios.post(
-        `http://localhost:5000/user/logout`,
+        `https://chat-app-efwn.onrender.com/user/logout`,
         {},
         { withCredentials: true }
       );
