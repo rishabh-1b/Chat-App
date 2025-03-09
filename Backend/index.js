@@ -29,4 +29,4 @@ app.get("*", (req, res) => {
 	res.sendFile(path.join(__dirname, "Frontend", "dist", "index.html"));
 });
 
-server.listen(process.env.PORT);
+server.listen(process.env.PORT || 3000);
