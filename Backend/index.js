@@ -26,7 +26,7 @@ app.use("/message", messageRouter);
 app.use(express.static(path.join(_dirname,"/Frontend/dist")));
 
 app.get("*", (req, res) => {
-	res.sendFile(path.join(__dirname, "Frontend", "dist", "index.html"));
+	res.sendFile(path.join(_dirname, "Frontend", "dist", "index.html"));
 });
 
 server.listen(process.env.PORT || 3000);
